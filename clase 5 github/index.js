@@ -1,22 +1,9 @@
-let login = false;
+const productos = ['carne picada', 'tomates', 'lechuga', 'queso', 'pan'];
 
-let user = "Lucas";
-
-let password = "1234";
-
-let preguntaNombre = prompt("Cual es tu nombre?");
-
-let preguntaPass = prompt("Ingresa tu password");
-
-const signIn = (preguntaNombre, preguntaPass, user, password) => {
-
-    if(preguntaNombre === user && preguntaPass === password) {
-        alert("Bienvenido/a! Te estabamos esperando");
-        login = true;
-    } else {
-        alert("QUIEN SOS? NADIE TE CONOCE ${preguntaNombre}");
-    }
-
+for (let i = 0; i < productos.length; i++) {
+    console.log("productos" + (i + 1) + ":" + productos[index]);
 }
 
-signIn();
+productos.pop();
+
+console.log(productos);
